@@ -1,0 +1,244 @@
+<apex:page controller="ResumeCtrl" showHeader="false" sidebar="false" standardStylesheets="false">
+
+<apex:stylesheet value="{!URLFOR($Resource.BB_SLDS080, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+
+<div>
+  <div aria-hidden="false" role="dialog" class="slds-action-overflow--touch">
+    <div class="slds-action-overflow--touch__container">
+      <div class="slds-action-overflow--touch__content">
+        <div class="slds-action-overflow--touch__body">
+          <ul role="menu" class="slds-list--vertical slds-has-block-links--space slds-has-dividers--bottom">
+            <li class="slds-list__item">
+              <a role="menuitem" href="javascript:void(0)">
+                <p class="slds-truncate">
+                  <span class="slds-icon__container slds-icon__container--circle slds-icon-action-share-post slds-m-right--medium">
+                    <svg aria-hidden="true" class="slds-icon slds-icon--small">
+                      <!--<use xlink:href="/assets/icons/action-sprite/svg/symbols.svg#share_post"></use>-->
+                    </svg>
+                  </span>
+                  <span>Post</span>
+                </p>
+              </a>
+            </li>
+            <li class="slds-list__item">
+              <a role="menuitem" href="javascript:void(0)">
+                <p class="slds-truncate">
+                  <span class="slds-icon__container slds-icon__container--circle slds-icon-action-new-task slds-m-right--medium">
+                    <svg aria-hidden="true" class="slds-icon slds-icon--small">
+                      <!--<use xlink:href="/assets/icons/action-sprite/svg/symbols.svg#new_task"></use>-->
+                    </svg>
+                  </span>
+                  <span>New Task</span>
+                </p>
+              </a>
+            </li>
+            <li class="slds-list__item">
+              <a role="menuitem" href="javascript:void(0)">
+                <p class="slds-truncate">
+                  <span class="slds-icon__container slds-icon__container--circle slds-icon-action-new-contact slds-m-right--medium">
+                    <svg aria-hidden="true" class="slds-icon slds-icon--small">
+                      <!--<use xlink:href="/assets/icons/action-sprite/svg/symbols.svg#new_contact"></use>-->
+                    </svg>
+                  </span>
+                  <span>New Contact</span>
+                </p>
+              </a>
+            </li>
+            <li class="slds-list__item">
+              <a role="menuitem" href="javascript:void(0)">
+                <p class="slds-truncate">
+                  <span class="slds-icon__container slds-icon__container--circle slds-icon-action-new-opportunity slds-m-right--medium">
+                    <svg aria-hidden="true" class="slds-icon slds-icon--small">
+                      <!--<use xlink:href="/assets/icons/action-sprite/svg/symbols.svg#new_opportunity"></use>-->
+                    </svg>
+                  </span>
+                  <span>New Opportunity</span>
+                </p>
+              </a>
+            </li>
+            <li class="slds-list__item">
+              <a role="menuitem" href="javascript:void(0)">
+                <p class="slds-truncate">
+                  <span class="slds-icon__container slds-icon__container--circle slds-icon-action-lead-convert slds-m-right--medium">
+                    <svg aria-hidden="true" class="slds-icon slds-icon--small">
+                      <!--<use xlink:href="/assets/icons/action-sprite/svg/symbols.svg#lead_convert"></use>-->
+                    </svg>
+                  </span>
+                  <span>Convert</span>
+                </p>
+              </a>
+            </li>
+            <li class="slds-list__item">
+              <a role="menuitem" href="javascript:void(0)">
+                <p class="slds-truncate">
+                  <span class="slds-icon__container slds-icon__container--circle slds-icon-action-edit slds-m-right--medium">
+                    <svg aria-hidden="true" class="slds-icon slds-icon--small">
+                      <!--<use xlink:href="/assets/icons/action-sprite/svg/symbols.svg#edit"></use>-->
+                    </svg>
+                  </span>
+                  <span>Edit</span>
+                </p>
+              </a>
+            </li>
+            <li class="slds-list__item">
+              <a role="menuitem" href="javascript:void(0)">
+                <p class="slds-truncate">
+                  <span class="slds-icon__container slds-icon__container--circle slds-icon-action-share-post slds-m-right--medium">
+                    <svg aria-hidden="true" class="slds-icon slds-icon--small">
+                      <!--<use xlink:href="/assets/icons/action-sprite/svg/symbols.svg#share_post"></use>-->
+                    </svg>
+                  </span>
+                  <span>Post</span>
+                </p>
+              </a>
+            </li>
+            <li class="slds-list__item">
+              <a role="menuitem" href="javascript:void(0)">
+                <p class="slds-truncate">
+                  <span class="slds-icon__container slds-icon__container--circle slds-icon-action-new-task slds-m-right--medium">
+                    <svg aria-hidden="true" class="slds-icon slds-icon--small">
+                      <!--<use xlink:href="/assets/icons/action-sprite/svg/symbols.svg#new_task"></use>-->
+                    </svg>
+                  </span>
+                  <span>New Task</span>
+                </p>
+              </a>
+            </li>
+            <li class="slds-list__item">
+              <a role="menuitem" href="javascript:void(0)">
+                <p class="slds-truncate">
+                  <span class="slds-icon__container slds-icon__container--circle slds-icon-action-new-contact slds-m-right--medium">
+                    <svg aria-hidden="true" class="slds-icon slds-icon--small">
+                      <!--<use xlink:href="/assets/icons/action-sprite/svg/symbols.svg#new_contact"></use>-->
+                    </svg>
+                  </span>
+                  <span>New Contact</span>
+                </p>
+              </a>
+            </li>
+            <li class="slds-list__item">
+              <a role="menuitem" href="javascript:void(0)">
+                <p class="slds-truncate">
+                  <span class="slds-icon__container slds-icon__container--circle slds-icon-action-new-opportunity slds-m-right--medium">
+                    <svg aria-hidden="true" class="slds-icon slds-icon--small">
+                      
+                    </svg>
+                  </span>
+                  <span>New Opportunity</span>
+                </p>
+              </a>
+            </li>
+            <li class="slds-list__item">
+              <a role="menuitem" href="javascript:void(0)">
+                <p class="slds-truncate">
+                  <span class="slds-icon__container slds-icon__container--circle slds-icon-action-lead-convert slds-m-right--medium">
+                    <svg aria-hidden="true" class="slds-icon slds-icon--small">
+                      
+                    </svg>
+                  </span>
+                  <span>Convert</span>
+                </p>
+              </a>
+            </li>
+            <li class="slds-list__item">
+              <a role="menuitem" href="javascript:void(0)">
+                <p class="slds-truncate">
+                  <span class="slds-icon__container slds-icon__container--circle slds-icon-action-edit slds-m-right--medium">
+                    <svg aria-hidden="true" class="slds-icon slds-icon--small">
+                      
+                    </svg>
+                  </span>
+                  <span>Edit</span>
+                </p>
+              </a>
+            </li>
+            <li class="slds-list__item">
+              <a role="menuitem" href="javascript:void(0)">
+                <p class="slds-truncate">
+                  <span class="slds-icon__container slds-icon__container--circle slds-icon-action-share-post slds-m-right--medium">
+                    <svg aria-hidden="true" class="slds-icon slds-icon--small">
+                      
+                    </svg>
+                  </span>
+                  <span>Post</span>
+                </p>
+              </a>
+            </li>
+            <li class="slds-list__item">
+              <a role="menuitem" href="javascript:void(0)">
+                <p class="slds-truncate">
+                  <span class="slds-icon__container slds-icon__container--circle slds-icon-action-new-task slds-m-right--medium">
+                    <svg aria-hidden="true" class="slds-icon slds-icon--small">
+                      
+                    </svg>
+                  </span>
+                  <span>New Task</span>
+                </p>
+              </a>
+            </li>
+            <li class="slds-list__item">
+              <a role="menuitem" href="javascript:void(0)">
+                <p class="slds-truncate">
+                  <span class="slds-icon__container slds-icon__container--circle slds-icon-action-new-contact slds-m-right--medium">
+                    <svg aria-hidden="true" class="slds-icon slds-icon--small">
+                      
+                    </svg>
+                  </span>
+                  <span>New Contact</span>
+                </p>
+              </a>
+            </li>
+            <li class="slds-list__item">
+              <a role="menuitem" href="javascript:void(0)">
+                <p class="slds-truncate">
+                  <span class="slds-icon__container slds-icon__container--circle slds-icon-action-new-opportunity slds-m-right--medium">
+                    <svg aria-hidden="true" class="slds-icon slds-icon--small">
+                      
+                    </svg>
+                  </span>
+                  <span>New Opportunity</span>
+                </p>
+              </a>
+            </li>
+            <li class="slds-list__item">
+              <a role="menuitem" href="javascript:void(0)">
+                <p class="slds-truncate">
+                  <span class="slds-icon__container slds-icon__container--circle slds-icon-action-lead-convert slds-m-right--medium">
+                    <svg aria-hidden="true" class="slds-icon slds-icon--small">
+                      
+                    </svg>
+                  </span>
+                  <span>Convert</span>
+                </p>
+              </a>
+            </li>
+            <li class="slds-list__item">
+              <a role="menuitem" href="javascript:void(0)">
+                <p class="slds-truncate">
+                  <span class="slds-icon__container slds-icon__container--circle slds-icon-action-edit slds-m-right--medium">
+                    <svg aria-hidden="true" class="slds-icon slds-icon--small">
+                      
+                    </svg>
+                  </span>
+                  <span>Edit</span>
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="slds-action-overflow--touch__footer">
+        <button class="slds-button slds-button--neutral slds-max-small-button--stretch">Cancel</button>
+      </div>
+    </div>
+  </div>
+  <div class="slds-backdrop slds-backdrop--open"></div>
+</div>
+
+<h1>Under Work</h1>
+
+{!ResumeHeader.Name}       <BR/>
+{!ResumeHeader.Phone__c}   <BR/>
+{!ResumeHeader.Email__c}   <BR/>
+{!ResumeHeader.Address__c} <BR/>
+</apex:page>

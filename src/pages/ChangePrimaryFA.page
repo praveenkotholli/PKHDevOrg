@@ -1,0 +1,16 @@
+<apex:page standardController="Account" lightningStylesheets="true" recordSetVar="accounts" action="{!onLoad}" extensions="PrimaryFAChangeCtrl" >
+ 
+ 
+    <h1>Change Primary FA</h1> 
+    <br/>
+    
+    <apex:pageBlock mode="inlineEdit">
+    	<apex:pageBlockTable value="{!selList}" var="acc">
+    		<apex:column value="{!acc.Name}"/>
+            <apex:column value="{!acc.Phone}"/>
+            <apex:column value="{!acc.Primary_Contact_FA__c}">
+            </apex:column>
+   	 	</apex:pageBlockTable>
+    </apex:pageBlock>
+    
+</apex:page>

@@ -1,0 +1,11 @@
+<!--c:facetHeader-->
+<aura:component >
+    <aura:attribute name="header" type="Aura.Component[]"/>
+    <aura:attribute name="footer" type="Aura.Component[]"/>
+ 
+    <div>  
+        <span class="header">{!v.header}</span><br/>
+        <span class="body">{!v.body}</span><br/>
+        <span class="footer">{!v.footer}</span><br/>
+    </div>
+</aura:component>

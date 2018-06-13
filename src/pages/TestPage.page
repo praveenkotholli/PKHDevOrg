@@ -1,0 +1,23 @@
+<apex:page standardController="Account">
+
+    <apex:sectionHeader title="Account Edit" />
+
+  <apex:form id="frmId">
+        <apex:pageBlock title="Account Edit" mode="edit">
+
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!save}"/>
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection title="Account Information" columns="2" >
+            <apex:repeat value="{!$Objecttype.Account.fieldsets.MyFieldSet}" var="AI">
+
+            <apex:inputField value="{!Account[AI.fieldPath]}" required="{!OR(AI.required, AI.dbrequired)}"/> 
+         </apex:repeat>
+
+        </apex:pageBlockSection>
+
+        </apex:pageBlock>
+</apex:form>
+</apex:page>

@@ -1,0 +1,10 @@
+<aura:component >
+   <!-- Attributes for the button -->
+   <aura:attribute name="label" type="String" description="This is the button label"/>
+   <aura:attribute name="class" type="String" description="SLDS class"/>
+   <!-- Attributes for SVG -->
+   <aura:attribute name="svgXlinkHref" type="String" description="svgIcon's xlink-href"/>
+   <aura:attribute name="svgClass" type="String" description="svgIcon CSS classname"/>
+<aura:attribute name="onclick" type="Aura.Action" default="{!c.myAction}" description="This allows handling onClick events"/>    
+   <button class="{!v.class}"><c:svg xlinkHref="{!v.svgXlinkHref}" class="{!v.svgClass}"  />{!v.label}</button>
+</aura:component>

@@ -1,0 +1,26 @@
+<aura:component >
+    <aura:attribute name="Street" type="String"/>
+    <aura:attribute name="City" type="String"/>
+    <aura:attribute name="State" type="String"/>
+    <aura:attribute name="PostalCode" type="String"/>
+    
+    {!v.Street}
+    {!v.City}
+    {!v.State}
+    {!v.PostalCode}
+
+<aura:attribute name="edit" type="Boolean" default="true"/>
+<aura:if isTrue="{!v.edit}">
+    <ui:button label="Edit My Page"/>
+    <aura:set attribute="else">
+        <br/> <b>You can’t edit this Page.</b>
+    </aura:set>
+</aura:if>
+    
+    Is Tablet: <b>{!$Browser.isTablet}</b><br/>
+    Is Phone: <b>{!$Browser.isPhone}</b><br/>
+    Is Android: <b>{!$Browser.isAndroid}</b><br/>
+    Is formFactor: <b>{!$Browser.formFactor}</b><br/>
+    
+    
+</aura:component>

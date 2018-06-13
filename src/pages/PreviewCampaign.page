@@ -1,0 +1,3 @@
+<apex:page standardController="Campaign">
+  Preview Campaign {!Campaign.Id}
+</apex:page>

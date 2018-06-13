@@ -1,0 +1,26 @@
+<!--c:helloFacets-->
+<aura:component >
+    See how we set the header facet.<br/>
+
+    <c:facetHeader > 
+        Nice body!
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        
+        <aura:set attribute="header">
+			<hr/>
+            !-START-!
+            <hr/>
+        </aura:set>
+        
+		<aura:set attribute="footer">
+            <hr/>
+            !-END-!
+            <hr/>
+        </aura:set>
+        
+        
+    </c:facetHeader>
+
+</aura:component>

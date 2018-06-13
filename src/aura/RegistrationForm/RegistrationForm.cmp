@@ -1,0 +1,26 @@
+<aura:component >
+	
+<ui:inputText label="First Name" aura:id="fname" placeholder="First Name"/>
+<ui:inputText label="Last Name" aura:id="lname" placeholder="Last Name"/>
+<ui:inputSelect label="Salutation" aura:id="Salutation" >
+    <ui:inputSelectOption label="Dr." value="Dr."/>
+    <ui:inputSelectOption label="Mr." value="Mr."/>
+    <ui:inputSelectOption label="Mrs." value="Mrs."/>
+    <ui:inputSelectOption label="Ms." value="Ms."/>
+</ui:inputSelect>
+<ui:inputPhone label="Phone Number" aura:id="pnumber" placeholder="Phone Number"/>
+<ui:button aura:id="Submit" label="Submit" />
+  
+    <br/>
+    
+    <aura:attribute name="text" type="String" default="Just a string.  Waiting for change."/>
+    <input type="button" value="Flawed HTML Button" onclick="alert('this will not work')"/>
+    <br/>
+    <input type="button" value="Hybrid HTML Button" onclick="{!c.handleClick}"/>
+    <br/>
+    <ui:button label="Framework Button" press="{!c.handleClick}"/>
+    <br/>
+    {!v.text}
+    
+    
+</aura:component>

@@ -1,0 +1,11 @@
+<!--c:nestedComponents-->
+<aura:component >
+    Observe!  Components within components!
+    <c:helloHTML />
+    <br/>
+     <aura:attribute name="passthrough" type="String" default="passed attribute"/>
+    <c:helloAttributes whom="Praveen"/>
+    <br/>
+    <c:helloAttributes whom="{!v.passthrough}"/>
+     *{!v.body}*
+</aura:component>
